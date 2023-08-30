@@ -1,19 +1,33 @@
+:root {
+	--pink: #934968;
+	--pink-light: #efe0e6;
+	--pink-hover: #c09699;
+	--powder-blue: #667586;
+	--blue-light: #b1bac4;
+}
+
 html {
-	font-size: 1.4em;
+	font-size: 1.2em;
 }
 
-body, h1, h2, h3, h4, h5, h6, ul.side-nav, .button {
-		font-family: 'Josefin Slab', serif;
-		color: #222;
+* {
+	/* border: 1px solid lime; */
 }
 
-h1, h2, h3 {
-	font-weight: bold;
-	color:#333;
+.bg-pink {
+	background-color: var(--pink-light);
+}
+
+.bg-blue {
+	background-color: var(--blue-light);
+}
+
+section {
+	padding: 2rem;
 }
 
 body {
-	background-color: #E6DFE0;
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 header {
@@ -21,7 +35,7 @@ header {
 	background-image: url("../img/header-background.jpg");
 	background-size: cover;
 	box-shadow: 0px 3px 3px #999;
-	padding: 50px;
+	padding: 20px;
 	position: relative;
 	z-index: 10;
 }
@@ -30,94 +44,62 @@ header h1 {
 	margin: 0;
 	color: #eee;
 	text-shadow: 2px 2px 4px #333;
-	font-size:4em;
+	font-size: 4em;
 }
 
-.page-wrapper {
-	box-shadow: 0px 2px 2px #666;
-	background: #eee;
+nav {
+	margin-bottom: 1rem;
 }
 
-.page-wrapper > .row {
-	padding-top:20px;
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: 'Josefin Slab', serif;
+	color: #222;
+	font-weight: bold;
 }
 
-.sidebar {
-	text-align: center;
-	margin-bottom: 30px;
+table th {
+	font-family: 'Josefin Slab', serif;
+	font-size: 1.2em;
 }
+
+.logo-wrapper {
+	max-width: 300px;
+	padding: .5rem;
+	background: #fff;
+	margin: 0 auto;
+}
+
+/* Contact Us */
+
+.contact-us-list {
+	list-style-type: none;
+	display: inline-block;
+	margin: 0;
+	text-align: left;
+}
+
+.contact-us-list li {
+	display: grid;
+	grid-template-columns: 20px auto;
+	gap: 0.5em;
+	align-items: center;
+}
+
+.contact-us-list li a,
+.contact-us-list li address {
+	padding: 0.5em;
+}
+
+/* Helpers */
 
 .brand {
 	font-weight: bold;
-	color: #b16283;
+	color: var(--pink);
 }
 
-.stitched {
-	text-align: center;
-	padding: 16px;
-	margin: 10px 0;
-	background: #667586;
-	color: #fff;
-	border: 2px dashed #fff;
-	border-radius: 10px;
-	box-shadow: 0 0 0 4px #667586;
-	margin-bottom: 42px;
-}
-
-.stitched-pink {
-	background: #9c8084;
-	box-shadow: 0 0 0 4px #9c8084;
-}
-
-.stitched h3 {
-	color: #fff;
-	font-size: 1.4em;
-	margin: 0;
-	margin-bottom: 10px;
-	padding-bottom: 10px;
-	border-bottom: 2px dashed #fff;
-}
-
-.stitched p {
-	margin: 0;
-	font-size: 1em;
-	line-height: 1.8em;
-}
-
-.stitched address {
-	font-size: 1em;
-}
-
-.stitched span.brand {
-	color: #d9b1c2;
-}
-
-ul.side-nav {
-	text-align: center;
-	padding-top: 0;
-}
-
-ul.side-nav li a {
-	font-weight: bold;
-	font-size: 1.5em;
-	padding: 10px;
-	margin: 20px 0;
-	background: #6d9aaf;
-	color: #fff !important;
-	border: 2px dashed #fff;
-	border-radius: 10px;
-	box-shadow: 0 0 0 4px #6d9aaf, 0px 6px 6px #999
-}
-
-ul.side-nav li a:hover {
-	transition-timing-function: ease-in-out;
-	-webkit-transition: background-color 50ms ease-out;
-	background: #83a9bb;
-	box-shadow: 0 0 0 4px #83a9bb; 
-	color: #fff;
-}
-
-.button.radius {
+/* .button.radius {
 	font-weight: bold;
 	font-size: 1.2em;
 	color: #fff;
@@ -135,54 +117,77 @@ a.button.radius:hover {
 	-webkit-transition: background-color 50ms ease-out;
 	background: #c09699;
 	box-shadow: 0 0 0 4px #c09699; 
-}
-
-a.button.facebook {
-	background: #3B5998;
-	box-shadow: 0 0 0 4px #3B5998, 0px 6px 6px #999
-}
-
-a.button.facebook:hover {
-	background: #5979be;
-	box-shadow: 0 0 0 4px #5979be;
-}
+} */
 
 address {
-	line-height: 1.5em;
 	font-style: normal;
 }
 
-table {
-	width: 100%;
-	text-align: center;
-}
-
-table thead tr th {
-	text-align: center;
-	font-size: 1.8em;
-	line-height: 1.4em;
-}
-
 footer {
+	padding: 1rem 2rem 0 2rem;
 	text-align: center;
 }
 
 footer p {
 	border-top: 1px solid #bbb;
-	padding-top: 20px;
+	padding-top: 1em;
 	color: #999;
 }
 
-footer span.brand {
-	color: #d9b1c2;
+.text-small {
+	font-size: 0.8em;
 }
 
-.th {
-	display: block;
-	margin: 0 auto;
+dl.hours {
+	grid-template-columns: 1fr 4fr;
+	gap: 1em;
+	line-height: 1.2;
 }
 
-.th:hover, .th:focus {
-	-webkit-box-shadow: 0 0 6px 1px rgba(109, 154, 175, 0.8);
-	box-shadow: 0 0 6px 1px rgba(109, 154, 175, 0.8);
+dl {
+	display: grid;
+	grid-template-columns: min-content auto;
+	gap: 0.5em;
+}
+
+dt {
+	text-align: right;
+}
+
+/* Stitched Styles */
+
+.stitched {
+	padding: 16px;
+	margin: 10px 0;
+	border: 2px dashed #222;
+	border-radius: 16px;
+	box-shadow: 0 0 0 10px #fff;
+	background: white;
+}
+
+.stitched.blue {
+	border-color: white;
+	background: var(--powder-blue);
+	box-shadow: 0 0 0 10px var(--powder-blue);
+}
+.stitched.blue a,
+.stitched.blue h2 {
+	color: white;
+}
+
+.stitched.pink {
+	color: white;
+	border-color: white;
+	background: var(--pink);
+	box-shadow: 0 0 0 10px var(--pink);
+}
+.stitched.pink h2 {
+	color: white;
+}
+.stitched.pink a {
+	color: white;
+	text-decoration: underline;
+}
+.stitched.pink a:hover {
+	color: var(--pink-hover);
 }
