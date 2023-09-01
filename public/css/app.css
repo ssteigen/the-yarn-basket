@@ -3,7 +3,7 @@
 	--pink-light: #efe0e6;
 	--pink-hover: #c09699;
 	--powder-blue: #667586;
-	--blue-light: #b1bac4;
+	--blue-light:#d0d6dc;
 }
 
 html {
@@ -22,22 +22,18 @@ html {
 	background-color: var(--blue-light);
 }
 
-section {
-	padding: 2rem;
-}
-
 body {
 	font-family: 'Josefin Sans', sans-serif;
 }
 
 header {
-	text-align: center;
-	background-image: url("../img/header-background.jpg");
-	background-size: cover;
-	box-shadow: 0px 3px 3px #999;
-	padding: 20px;
-	position: relative;
-	z-index: 10;
+	/* text-align: center; */
+	/* background-image: url("../img/exterior-2022.jpg"); */
+	/* background-size: cover; */
+	/* box-shadow: 0px 3px 3px #999; */
+	/* padding: 200px; */
+	/* position: relative; */
+	/* z-index: 10; */
 }
 
 header h1 {
@@ -69,6 +65,16 @@ table th {
 	padding: .5rem;
 	background: #fff;
 	margin: 0 auto;
+}
+
+section {
+	padding: 3rem 1rem;
+}
+
+@media (max-width: 400px) {
+	section {
+		padding: 2rem 1rem;
+	}
 }
 
 /* Contact Us */
@@ -154,6 +160,14 @@ dt {
 	text-align: right;
 }
 
+.button {
+	border-radius: 10px;
+	background-color: var(--pink);
+}
+.button:hover {
+	background-color: var(--pink-hover);
+}
+
 /* Stitched Styles */
 
 .stitched {
@@ -165,16 +179,23 @@ dt {
 	background: white;
 }
 
+/* Blue variant */
 .stitched.blue {
+	color: white;
 	border-color: white;
 	background: var(--powder-blue);
 	box-shadow: 0 0 0 10px var(--powder-blue);
 }
 .stitched.blue a,
-.stitched.blue h2 {
+.stitched.blue h2,
+.stitched.blue label {
 	color: white;
 }
+.stitched.blue .brand {
+	color: var(--pink-hover);
+}
 
+/* Pink Variant */
 .stitched.pink {
 	color: white;
 	border-color: white;
