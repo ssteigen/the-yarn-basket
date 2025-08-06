@@ -18,35 +18,27 @@
 		<h1>The Yarn Basket</h1>
 	</header> -->
 	
-	<main class="">
-		<!-- <nav class="grid-container">
-			<ul class="menu expanded text-center">
-				<li><a href="#about">About</a></li>
-				<li><a href="#contact">Contact</a></li>
-				<li><a href="#products">Products</a></li>
-				<li><a href="#classes">Classes</a></li>
-				<li><a href="#sale">Sale</a></li>
-			</ul>
-		</nav> -->
-
-		<header id="welcome">
+	<main>
+		<section id="welcome" role="banner">
 			<div class="grid-container">
 				<div class="grid-x grid-margin-x grid-margin-y align-center">
 					<div class="medium-8 large-6 cell text-center">
-						<div class="logo-wrapper"><img class="logo" src="img/logo.jpg" /></div>
+						<h1 class="visually-hidden">The Yarn Basket</h1>
+						<div class="logo-wrapper"><img class="logo" src="img/logo.jpg" alt="The Yarn Basket Logo" /></div>
 						<p>Just off of Route 30 in Chambersburg lies a wonderful haven for knitting enthusiasts. Stop by to see how we can best serve you!</p>	
 					</div>
 				</div>
 			</div>
-		</header>
+		</section>
 
-		<section class="bg-blue">
+		<section class="bg-blue" aria-labelledby="about-heading">
 			<div class="grid-container">
 				<div class="grid-x grid-margin-x grid-margin-y align-center">
 					<div class="medium-8 cell">
 						<div class="card">
-							<img src="img/exterior-2022.jpg" />
+							<img src="img/exterior-2022.jpg" alt="The Yarn Basket shop exterior" />
 							<div class="card-section text-center">
+								<h2 id="about-heading" class="visually-hidden">About Our Store</h2>
 								<p>Nestled in the heart of the Cumberland Valley lies a wonderful haven for knitters, and needlework enthusiasts. <span class="brand">The Yarn Basket</span> is Central Pennsylvania's Home for knitting and needlework. With our large selection of yarns, you can very easily make this your only stop for your needlework supplies.</p>
 							</div>
 						</div>
@@ -56,13 +48,13 @@
 		</section>
 
 
-		<section id="contact" class="bg-pink">
+		<section id="contact" class="bg-pink" aria-labelledby="contact-heading">
 			<div class="grid-container">
 				<div class="grid-x grid-margin-x grid-margin-y align-center">
 					
 					<div class="large-4 cell">
 						<div class="stitched pink text-center">
-							<h2>Contact</h2>
+							<h2 id="contact-heading">Contact</h2>
 							<ul class="contact-us-list">
 								<li><i class="fi-telephone"></i><a href="tel:717-263-3236">(717) 263-3236</a></li>
 								<li><i class="fi-marker"></i><address>150 Falling Springs Rd<br>Chambersburg, PA 17202</address></li>
@@ -77,7 +69,7 @@
 					</div>
 					<div class="large-6 cell">
 						<div class="stitched pink">
-						<h2 class="h2 text-center">Hours</h2>
+						<h3 class="text-center">Hours</h3>
 						<dl class="hours">
 							<dt>Mon</dt><dd>10am &mdash; 4pm</dd>
 							<dt>Tue</dt><dd>by appointment only<br/>(please call or e-mail at least 1 day in advance)</dd>
@@ -102,7 +94,7 @@
 				</div>
 				<div class="medium-4 cell">
 					<div class="card">
-						<img src="img/susan-yeager.jpg" />
+						<img src="img/susan-yeager.jpg" alt="Susan Yeager, owner of The Yarn Basket" />
 						<div class="card-section text-center">
 							<p><span class="brand">The Yarn Basket</span> is owned and run by Susan Yeager.  Feel free to stop by and say "hi!"</p>
 						</div>
@@ -111,20 +103,21 @@
 			</div>
 		</section>
 
-		<section id="about" class="bg-blue">
+		<section id="about" class="bg-blue" aria-labelledby="about-section-heading">
 			<div class="grid-container">
 				<div class="grid-x grid-margin-x grid-margin-y align-center">
 					<div class="medium-6 cell">
-						<h2>About</h2>
+						<h2 id="about-section-heading">About</h2>
 						<p><span class="brand">The Yarn Basket</span> is your one-stop shop for knitting supplies.</p>
 						<p>Do you want to learn to knit? We regularly run classes!</p>
 					</div>
 					<div class="medium-4 cell">
 						<div class="stitched blue">
 							<form>
-								<h2>Subscribe</h2>
+								<h3>Subscribe</h3>
 								<p>Sign up to receive emails about future sales and offers from <span class="brand">The Yarn Basket</span>!</p>
-								<label>Email* <input name="email" type="email" required></label>
+								<label for="email">Email*</label>
+								<input id="email" name="email" type="email" required>
 								<input type="submit" class="button" value="Subscribe">
 							</form>
 						</div>
@@ -134,11 +127,11 @@
 		</section>
 	</main>
 
-	<section id="classes" class="">
+	<section id="classes" aria-labelledby="classes-heading">
 		<div class="grid-container">
 			<div class="grid-x grid-margin-x grid-margin-y align-center">
 				<div class="medium-4 cell">
-					<h2>Classes</h2>
+					<h2 id="classes-heading">Classes</h2>
 					<p>Looking to improve your skills and what to have a great time doing so? From beginners to experts, we have a class for you.</p>
 					<p>Our goal is to teach you how to knit and purl, follow a pattern, and fix mistakes.</p>
 					<p>Choose a project and our instructors will help you complete it.</p>
@@ -162,20 +155,20 @@
 		</div>
 	</section>
 
-	<section id="projects">
+	<section id="projects" aria-labelledby="projects-heading">
 
 		
 
 		<div class="grid-container">
 			<div class="grid-x grid-margin-x grid-margin-y">
 				<div class="medium-12 cell">
-					<h3>Project Gallery</h3>
+					<h2 id="projects-heading">Project Gallery</h2>
 					<p>Pictures shown are projects that students and customers have completed with yarn they purchased at <span class="brand">The Yarn Basket</span></p>
 
 					<div class="grid-container">
 						<div class="grid-x grid-margin-x grid-margin-y">
 							<div class="card medium-3 cell">
-								<img src="img/projects/image1.jpg" alt="">
+								<img loading="lazy" src="img/projects/image1.jpg" alt="">
 								<div class="card-section text-small">
 									<dl>
 										<dt>By</dt><dd>Susan</dd>
@@ -187,7 +180,7 @@
 							</div>
 
 							<div class="card medium-3 cell">
-								<img src="img/projects/image2.jpg" alt="">
+								<img loading="lazy" src="img/projects/image2.jpg" alt="">
 								<div class="card-section text-small">
 									<dl>
 										<dt>By</dt><dd>Sandy</dd>
@@ -198,7 +191,7 @@
 							</div>
 
 							<div class="card medium-3 cell">
-								<img src="img/projects/image3.jpg" alt="">
+								<img loading="lazy" src="img/projects/image3.jpg" alt="">
 								<div class="card-section text-small">
 									<dl>
 										<dt>By</dt><dd>Alyssa</dd>
@@ -209,7 +202,7 @@
 							</div>
 
 							<div class="card medium-3 cell">
-								<img src="img/projects/image4.jpg" alt="">
+								<img loading="lazy" src="img/projects/image4.jpg" alt="">
 								<div class="card-section text-small">
 									<dl>
 										<dt>By</dt><dd>Susan</dd>
@@ -221,7 +214,7 @@
 							</div>
 
 							<div class="card medium-3 cell">
-								<img src="img/projects/image5.jpg" alt="">
+								<img loading="lazy" src="img/projects/image5.jpg" alt="">
 								<div class="card-section text-small">
 									<dl>
 										<dt>By</dt><dd>Nancy</dd>
@@ -232,7 +225,7 @@
 							</div>
 
 							<div class="card medium-3 cell">
-								<img src="img/projects/image6.jpg" alt="">
+								<img loading="lazy" src="img/projects/image6.jpg" alt="">
 								<div class="card-section text-small">
 									<dl>
 										<dt>By</dt><dd>Jutta</dd>
@@ -243,7 +236,7 @@
 							</div>
 
 							<div class="card medium-3 cell">
-								<img src="img/projects/image7.jpg" alt="">
+								<img loading="lazy" src="img/projects/image7.jpg" alt="">
 								<div class="card-section text-small">
 									<dl>
 										<dt>By</dt><dd>Alyssa</dd>
@@ -254,7 +247,7 @@
 							</div>
 
 							<div class="card medium-3 cell">
-								<img src="img/projects/image8.jpg" alt="">
+								<img loading="lazy" src="img/projects/image8.jpg" alt="">
 								<div class="card-section text-small">
 									<dl>
 										<dt>By</dt><dd>Alyssa</dd>
@@ -265,7 +258,7 @@
 							</div>
 
 							<div class="card medium-3 cell">
-								<img src="img/projects/image9.jpg" alt="">
+								<img loading="lazy" src="img/projects/image9.jpg" alt="">
 								<div class="card-section text-small">
 									<dl>
 										<dt>By</dt><dd>Judy</dd>
@@ -276,7 +269,7 @@
 							</div>
 
 							<div class="card medium-3 cell">
-								<img src="img/projects/image10.jpg" alt="">
+								<img loading="lazy" src="img/projects/image10.jpg" alt="">
 								<div class="card-section text-small">
 									<dl>
 										<dt>By</dt><dd>Alyssa</dd>
@@ -287,7 +280,7 @@
 							</div>
 
 							<div class="card medium-3 cell">
-								<img src="img/projects/image11.jpg" alt="">
+								<img loading="lazy" src="img/projects/image11.jpg" alt="">
 								<div class="card-section text-small">
 									<dl>
 										<dt>By</dt><dd>Kathy</dd>
@@ -298,7 +291,7 @@
 							</div>
 
 							<div class="card medium-3 cell">
-								<img src="img/projects/image12.jpg" alt="">
+								<img loading="lazy" src="img/projects/image12.jpg" alt="">
 								<div class="card-section text-small">
 									<dl>
 										<dt>By</dt><dd>Susan H</dd>
@@ -310,7 +303,7 @@
 							</div>
 
 							<div class="card medium-3 cell">
-								<img src="img/projects/image13.jpg" alt="">
+								<img loading="lazy" src="img/projects/image13.jpg" alt="">
 								<div class="card-section text-small">
 									<dl>
 										<dt>By</dt><dd>Susan</dd>
@@ -321,7 +314,7 @@
 							</div>
 
 							<div class="card medium-3 cell">
-								<img src="img/projects/image14.jpg" alt="">
+								<img loading="lazy" src="img/projects/image14.jpg" alt="">
 								<div class="card-section text-small">
 									<dl>
 										<dt>By</dt><dd>Mary Jo</dd>
@@ -333,7 +326,7 @@
 							</div>
 
 							<div class="card medium-3 cell">
-								<img src="img/projects/image15.jpg" alt="">
+								<img loading="lazy" src="img/projects/image15.jpg" alt="">
 								<div class="card-section text-small">
 									<dl>
 										<dt>By</dt><dd>Celeste</dd>
@@ -345,7 +338,7 @@
 							</div>
 
 							<div class="card medium-3 cell">
-								<img src="img/projects/image16.jpg" alt="">
+								<img loading="lazy" src="img/projects/image16.jpg" alt="">
 								<div class="card-section text-small">
 									<dl>
 										<dt>By</dt><dd>Connie E</dd>
@@ -356,7 +349,7 @@
 							</div>
 
 							<div class="card medium-3 cell">
-								<img src="img/projects/image17.jpg" alt="">
+								<img loading="lazy" src="img/projects/image17.jpg" alt="">
 								<div class="card-section text-small">
 									<dl>
 										<dt>By</dt><dd>Vivian E</dd>
@@ -366,7 +359,7 @@
 							</div>
 
 							<div class="card medium-3 cell">
-								<img src="img/projects/image18.jpg" alt="">
+								<img loading="lazy" src="img/projects/image18.jpg" alt="">
 								<div class="card-section text-small">
 									<dl>
 										<dt>By</dt><dd>Karen</dd>
@@ -377,7 +370,7 @@
 							</div>
 
 							<div class="card medium-3 cell">
-								<img src="img/projects/image19.jpg" alt="">
+								<img loading="lazy" src="img/projects/image19.jpg" alt="">
 								<div class="card-section text-small">
 									<dl>
 										<dt>By</dt><dd>Kathy F</dd>
@@ -389,7 +382,7 @@
 							</div>
 
 							<div class="card medium-3 cell">
-								<img src="img/projects/image20.jpg" alt="">
+								<img loading="lazy" src="img/projects/image20.jpg" alt="">
 								<div class="card-section text-small">
 									<dl>
 										<dt>By</dt><dd>Alyssa</dd>
@@ -400,7 +393,7 @@
 							</div>
 
 							<div class="card medium-3 cell">
-								<img src="img/projects/image21.jpg" alt="">
+								<img loading="lazy" src="img/projects/image21.jpg" alt="">
 								<div class="card-section text-small">
 									<dl>
 										<dt>By</dt><dd>Verna</dd>
@@ -411,7 +404,7 @@
 							</div>
 
 							<div class="card medium-3 cell">
-								<img src="img/projects/image22.jpg" alt="">
+								<img loading="lazy" src="img/projects/image22.jpg" alt="">
 								<div class="card-section text-small">
 									<dl>
 										<dt>By</dt><dd>Susan</dd>
@@ -423,7 +416,7 @@
 							</div>
 
 							<div class="card medium-3 cell">
-								<img src="img/projects/image23.jpg" alt="">
+								<img loading="lazy" src="img/projects/image23.jpg" alt="">
 								<div class="card-section text-small">
 									<dl>
 										<dt>By</dt><dd>Susan</dd>
